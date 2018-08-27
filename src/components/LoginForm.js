@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Text } from 'react-native';
 import firebase from 'firebase';
 import { Button, Card, CardSection, Input } from './common';
 
@@ -38,6 +39,10 @@ class LoginForm extends Component {
             onChangeText={password => this.setState({ password })}
           />
         </CardSection>
+
+        <Text>
+          {this.state.error}
+        </Text>
 
         <CardSection>
           <Button onPress={this.onButtonPress.bind(this)}>
