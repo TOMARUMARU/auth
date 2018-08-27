@@ -23,7 +23,11 @@ const styles = {
     lineHeight: 23,
     flex: 2
   },
-  labelStyle: {},
+  labelStyle: {
+    fontSize: 18,
+    paddingLeft: 20,
+    flex: 1
+  },
   containerStyle: {}
 }
 
